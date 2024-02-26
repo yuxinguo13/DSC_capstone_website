@@ -1,5 +1,6 @@
-# DSC Capstone: Graph Neural Networks for Enhancing Sentiment Analysis
-By Yujia Wang, Yuxin Guo, 
+#Graph Neural Networks for Enhancing Sentiment Analysis
+By Yujia Wang, Yuxin Guo, Yunfan
+
 Mentor: Yusu Wang, Gal Mishne
 
 ## Introduction:
