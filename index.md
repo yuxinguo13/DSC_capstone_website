@@ -7,7 +7,7 @@
 ## Dataset
 
 ## Methodolody
-<img src="image/process.png" alt="Process.png" width="200"/>
+<img src="image/process.png" alt="Process.png" width="800"/>
 
 **RoBERTa Embedding:** For deep textual understanding, we leverage RoBERTa embeddings, enriching our analysis with nuanced language representation.
 
@@ -15,11 +15,11 @@
 
 **GAT Implementation:** Utilizing TensorFlow, our GAT model dynamically assigns weights to node interactions, facilitating nuanced sentiment classification.
 
-<img src="image/process.png" alt="Architecture" width="200"/>
+<img src="image/process.png" alt="Architecture" width="600"/>
 
 ## Results
 
-![Accuracy Comparison](figures/accuracy_comparison.png)
+<img src="image/result.png" alt="result" width="400"/>
 
 *Figure: Comparison of model accuracies showing significant improvement with the RoBERTa+GNN approach.*
 
