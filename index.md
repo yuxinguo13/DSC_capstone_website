@@ -15,11 +15,11 @@
 
 **GAT Implementation:** Utilizing TensorFlow, our GAT model dynamically assigns weights to node interactions, facilitating nuanced sentiment classification.
 
-<img src="image/Architecture.jpg" alt="Architecture" width="600"/>
+<img src="image/Architecture.jpg" alt="Architecture" width="500"/>
 
 ## Results
 
-<img src="image/result.png" alt="result" width="200" />
+<img src="image/result.png" alt="result" width="250" />
 
 *Figure: Comparison of model accuracies showing significant improvement with the RoBERTa+GNN approach.*
 
