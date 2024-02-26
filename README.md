@@ -1,2 +1,2 @@
 # DSC_capstone_website
-Website for DSC 180AB Capstone
+This is our [website](https://yuxinguo13.github.io/DSC_capstone_website/) for DSC Capstone project.
