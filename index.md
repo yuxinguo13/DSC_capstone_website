@@ -24,6 +24,7 @@ In the dynamic realm of NLP, sentiment analysis stands as a cornerstone for unra
 ## Results
 
 <img src="image/result.png" alt="result" width="250" />
+
 *Figure: Comparison of model accuracies*
 
 The integration of GNN with RoBERTa resulted in a substantial accuracy improvement, confirming the model's efficacy in capturing complex relational dynamics and enhancing sentiment analysis. Our findings reveal the GAT-enhanced model's better performance in sentiment analysis over conventional methods.
