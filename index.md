@@ -1,4 +1,4 @@
-#Graph Neural Networks for Enhancing Sentiment Analysis
+# Graph Neural Networks for Enhancing Sentiment Analysis
 By Yujia Wang, Yuxin Guo, Yunfan
 
 Mentor: Yusu Wang, Gal Mishne
