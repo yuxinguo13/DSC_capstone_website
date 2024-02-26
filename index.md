@@ -1,10 +1,14 @@
 # DSC Capstone: Graph Neural Networks for Enhancing Sentiment Analysis
 
-## Introduction
-
-## Challenges
+## Introduction:
+In the dynamic realm of NLP, sentiment analysis stands as a cornerstone for unraveling the intricate emotional fabric of text. However, the traditional models often falter at the complex dance of sentiments in social media's vast expanse. This study introduces a novel confluence of Graph Neural Networks, particularly Graph Attention Networks, with the rich linguistic insights of NLP techniques such as RoBERTa. Centered on the vibrant dialogues within college SubReddit forums amid the COVID-19 period, our method transcends conventional sentiment analysis. It merges NLP's semantic depth with GNN's contextual acumen, aiming to illuminate the nuanced emotional landscape of digital discourse in these unprecedented times.
 
 ## Dataset
+- Social media data from **Reddit**, focusing on SubReddits related to various colleges.
+- Data from two periods: **2019 (pre-pandemic)** and **2020 (during the pandemic)**, to analyze sentiment changes due to COVID-19.
+- Selection based on a mix of **private and public universities**, varying by **location size** and their approach to **in-person learning during the pandemic**.
+- A total of **165,570 messages**, including original posts, comments, post replies, and comment replies.
+- **Manual labeling** of a substantial subset to ensure a balanced and reliable dataset for training and testing the machine learning models, covering various sentiment categories.
 
 ## Methodolody
 <img src="image/process.png" alt="Process.png" width="800"/>
