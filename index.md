@@ -7,7 +7,7 @@
 ## Dataset
 
 ## Methodolody
-![process](image/process.png)
+<img src="image/process.png" alt="Process.png" width="200"/>
 
 **RoBERTa Embedding:** For deep textual understanding, we leverage RoBERTa embeddings, enriching our analysis with nuanced language representation.
 
@@ -15,7 +15,7 @@
 
 **GAT Implementation:** Utilizing TensorFlow, our GAT model dynamically assigns weights to node interactions, facilitating nuanced sentiment classification.
 
-![Architecture](image/Architecture.jpg)
+<img src="image/process.png" alt="Architecture" width="200"/>
 
 ## Results
 
