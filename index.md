@@ -1,4 +1,4 @@
-# DSC 180AB Capstone Project Graph Neural Networks for Enhancing Sentiment Analysis
+# DSC Capstone: Graph Neural Networks for Enhancing Sentiment Analysis
 
 ## Introduction
 
