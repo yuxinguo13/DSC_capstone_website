@@ -1,7 +1,7 @@
 # Graph Neural Networks for Enhancing Sentiment Analysis
-By Yujia Wang, Yuxin Guo, Yunfan
-
-Mentor: Yusu Wang, Gal Mishne
+By Yuxin Guo (y5guo@ucsd.edu), Yunfan Long (yulong@ucsd.edu), Yujia Wang (yuw103@ucsd.edu)
+Mentor: Yusu Wang (yusuwang@ucsd.edu), Gal Mishne (gmishne@ucsd.edu)
+<hr>
 
 ## Introduction:
 In the dynamic realm of NLP, sentiment analysis stands as a cornerstone for unraveling the intricate emotional fabric of text. However, the traditional models often falter at the complex dance of sentiments in social media's vast expanse. This study introduces a novel confluence of Graph Neural Networks, particularly Graph Attention Networks, with the rich linguistic insights of NLP techniques such as RoBERTa. Centered on the vibrant dialogues within college SubReddit forums amid the COVID-19 period, our method transcends conventional sentiment analysis. It merges NLP's semantic depth with GNN's contextual acumen, aiming to illuminate the nuanced emotional landscape of digital discourse in these unprecedented times.
