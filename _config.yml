@@ -1,6 +1,0 @@
-remote_theme: pages-themes/tactile@v0.2.0
-plugins:
-- jekyll-remote-theme
-
-title: [Graph Neural Networks for Enhancing Sentiment Analysis]
-description: [We aim to use GNN to deal with the problem of long-range interactions. <br> By Yuxin Guo, Yunfan Long, Yujia Wang]
