@@ -1,5 +1,3 @@
-# Graph Neural Networks for Enhancing Sentiment Analysis
-
 By Yuxin Guo (y5guo@ucsd.edu), Yunfan Long (yulong@ucsd.edu), Yujia Wang (yuw103@ucsd.edu)
 
 Mentor: Yusu Wang (yusuwang@ucsd.edu), Gal Mishne (gmishne@ucsd.edu)
