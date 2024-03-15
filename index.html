@@ -187,9 +187,13 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Model</h2>
         <div class="content has-text-justified">
-          <p>The study proposes a machine learning model to analyze sentiment in social media data. This model builds upon existing methodologies in sentiment analysis and natural language processing. Specifically, it leverages techniques such as sentiment lexicons, neural networks, and deep learning architectures.</p>
           <p>By integrating these advanced techniques, the model aims to accurately classify the sentiment expressed in social media messages, including posts, comments, and replies. The model undergoes rigorous testing and validation to ensure its effectiveness in capturing the nuanced sentiment variations present in the dataset.</p>
+          <p>The nodes for our graph is a single comment. We use the <b>RoBERTa Embedding</b> to get deep textual understanding, enriching our analysis with nuanced language representation.</p>
+          <p>The edge that connect the nodes are directed graphs where nodes symbolize individual comments, and edges reflect the direct interactions, forming the backbone of our analysis.</p>
           <img src="./static/images/data_example.png" alt="Architecture.jpg" width="1200"/>
+          
+          <p>We proposes a machine learning model to analyze sentiment in social media data. This model builds upon existing methodologies in sentiment analysis and natural language processing. Specifically, it leverages techniques such as sentiment lexicons, neural networks, and deep learning architectures.</p>
+          <p><b>GAT Implementation</b> our GAT model dynamically assigns weights to node interactions, facilitating nuanced sentiment classification</p>
 
           <img src="./static/images/data_example.png" alt="model_architecture.png" width="1200"/>
         </div>
