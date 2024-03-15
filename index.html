@@ -154,10 +154,8 @@
           <p>
             In the dynamic realm of NLP, sentiment analysis stands as a cornerstone for unraveling the intricate emotional fabric of text. However, the traditional models often falter at the complex dance of sentiments in social media's vast expanse. This study introduces a novel confluence of Graph Neural Networks, particularly Graph Attention Networks, with the rich linguistic insights of NLP techniques such as RoBERTa. Centered on the vibrant dialogues within college SubReddit forums amid the COVID-19 period, our method transcends conventional sentiment analysis. It merges NLP's semantic depth with GNN's contextual acumen, aiming to illuminate the nuanced emotional landscape of digital discourse in these unprecedented times.
           </p>
-
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/process.png" alt="data_example" width="1000"/>
-          </div>
+          
+            <img src="./static/images/process.png" alt="data_example" width="800"/>
         </div>
           
       </div>
@@ -173,9 +171,8 @@
             <p>The study analyzes social media data sourced from Reddit, focusing specifically on SubReddits associated with different colleges. This dataset covers two distinct time periods: 2019, representing the pre-pandemic landscape, and 2020, reflecting sentiments amidst the COVID-19 pandemic.</p>
             <p>Selection criteria for the colleges included in the study were based on a variety of factors, such as geographic location, size, and their approach to in-person learning during the pandemic. This ensured a diverse representation of college communities.</p>
             <p>The dataset consists of 165,570 messages, including original posts, comments, and their respective replies. To enhance the reliability of the dataset, a significant subset of the data underwent manual labeling across various sentiment categories. This manual labeling process ensured a balanced and accurately labeled dataset for training and testing machine learning models.</p>
-            <div class="column is-3 has-text-centered">
-            <img src="./static/images/data_example.png" alt="data_example" width="1000"/>
-          </div>
+          
+            <img src="./static/images/data_example.png" alt="data_example" width="800"/>
         </div>
       </div>
     </div>
@@ -190,12 +187,12 @@
           <p>By integrating these advanced techniques, the model aims to accurately classify the sentiment expressed in social media messages, including posts, comments, and replies. The model undergoes rigorous testing and validation to ensure its effectiveness in capturing the nuanced sentiment variations present in the dataset.</p>
           <p>The nodes for our graph is a single comment. We use the <b>RoBERTa Embedding</b> to get deep textual understanding, enriching our analysis with nuanced language representation.</p>
           <p>The edge that connect the nodes are directed graphs where nodes symbolize individual comments, and edges reflect the direct interactions, forming the backbone of our analysis.</p>
-          <img src="./static/images/Architecture.jpg" alt="Architecture.jpg" width="1000"/>
+          <img src="./static/images/Architecture.jpg" alt="Architecture.jpg" width="800"/>
           
           <p>We proposes a machine learning model to analyze sentiment in social media data. This model builds upon existing methodologies in sentiment analysis and natural language processing. Specifically, it leverages techniques such as sentiment lexicons, neural networks, and deep learning architectures.</p>
           <p><b>GAT Implementation</b> our GAT model dynamically assigns weights to node interactions, facilitating nuanced sentiment classification</p>
 
-          <img src="./static/images/model_architecture.png" alt="model_architecture.png" width="1000"/>
+          <img src="./static/images/model_architecture.png" alt="model_architecture.png" width="800"/>
         </div>
       </div>
     </div>
@@ -207,8 +204,7 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Result</h2>
         <div class="content has-text-justified">
-          <p>The analysis of the social media data revealed insightful trends in sentiment across different college communities on Reddit. Specifically, the study observed how sentiments evolved from the pre-pandemic period to the pandemic era.</p>
-          <p>Key findings include shifts in sentiment towards online learning, campus closures, and the overall impact of the pandemic on students' emotional well-being. The results provide valuable insights into the sentiments expressed by college students during a time of significant societal change.</p>
+          <p>When we combine Graph Neural Networks (GNN) with RoBERTa, a type of advanced language processing technology, we sometimes see better results than when we use RoBERTa by itself. This combination is like putting together a team where each member brings a unique strength, leading to a more effective outcome. Moreover, when we enhance our models with GAT, they often do a better job than the usual methods in understanding the sentiment or emotions in text. This is particularly true for identifying complex connections or the broader context of conversations, which is crucial for accurately interpreting what's being said. This success highlights how well these GAT-enhanced models work with data that involves relationships and connections, proving their value in making sense of intricate information flows.</p>
 
 <table border="1">
     <caption>Model Accuracy for 2019</caption>
