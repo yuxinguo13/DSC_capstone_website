@@ -156,7 +156,7 @@
           </p>
 
           <div class="column is-3 has-text-centered">
-            <img src="./static/images/process.png" alt="data_example" width="500"/>
+            <img src="./static/images/process.png" alt="data_example" width="1200"/>
           </div>
         </div>
           
@@ -174,7 +174,7 @@
             <p>Selection criteria for the colleges included in the study were based on a variety of factors, such as geographic location, size, and their approach to in-person learning during the pandemic. This ensured a diverse representation of college communities.</p>
             <p>The dataset consists of 165,570 messages, including original posts, comments, and their respective replies. To enhance the reliability of the dataset, a significant subset of the data underwent manual labeling across various sentiment categories. This manual labeling process ensured a balanced and accurately labeled dataset for training and testing machine learning models.</p>
             <div class="column is-3 has-text-centered">
-            <img src="./static/images/data_example.png" alt="data_example" width="500"/>
+            <img src="./static/images/data_example.png" alt="data_example" width="1200"/>
           </div>
         </div>
       </div>
@@ -189,7 +189,9 @@
         <div class="content has-text-justified">
           <p>The study proposes a machine learning model to analyze sentiment in social media data. This model builds upon existing methodologies in sentiment analysis and natural language processing. Specifically, it leverages techniques such as sentiment lexicons, neural networks, and deep learning architectures.</p>
           <p>By integrating these advanced techniques, the model aims to accurately classify the sentiment expressed in social media messages, including posts, comments, and replies. The model undergoes rigorous testing and validation to ensure its effectiveness in capturing the nuanced sentiment variations present in the dataset.</p>
-          
+          <img src="./static/images/data_example.png" alt="Architecture.jpg" width="1200"/>
+
+          <img src="./static/images/data_example.png" alt="model_architecture.png" width="1200"/>
         </div>
       </div>
     </div>
@@ -203,7 +205,89 @@
         <div class="content has-text-justified">
           <p>The analysis of the social media data revealed insightful trends in sentiment across different college communities on Reddit. Specifically, the study observed how sentiments evolved from the pre-pandemic period to the pandemic era.</p>
           <p>Key findings include shifts in sentiment towards online learning, campus closures, and the overall impact of the pandemic on students' emotional well-being. The results provide valuable insights into the sentiments expressed by college students during a time of significant societal change.</p>
-          
+
+<table border="1">
+    <caption>Model Accuracy for 2019</caption>
+    <thead>
+        <tr>
+            <th>Model</th>
+            <th>Metric</th>
+            <th>UCLA</th>
+            <th>UCSD</th>
+            <th>UCB</th>
+            <th>UofM</th>
+            <th>Harvard</th>
+            <th>Columbia</th>
+            <th>Overall</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">HAN</td>
+            <td>CAR</td>
+            <td>0.48</td>
+            <td>0.50</td>
+            <td>0.54</td>
+            <td><strong>0.58</strong></td>
+            <td>0.46</td>
+            <td>0.50</td>
+            <td>0.498</td>
+        </tr>
+        <tr>
+            <td>F1</td>
+            <td>0.50</td>
+            <td>0.51</td>
+            <td>0.49</td>
+            <td>0.59</td>
+            <td>0.43</td>
+            <td>0.49</td>
+            <td>0.482</td>
+        </tr>
+        <tr>
+            <td rowspan="2">BERT</td>
+            <td>CAR</td>
+            <td>0.46</td>
+            <td>0.52</td>
+            <td><strong>0.64</strong></td>
+            <td>0.56</td>
+            <td>0.42</td>
+            <td>0.46</td>
+            <td>0.497</td>
+        </tr>
+        <tr>
+            <td>F1</td>
+            <td><strong>0.53</strong></td>
+            <td><strong>0.56</strong></td>
+            <td><strong>0.65</strong></td>
+            <td><strong>0.61</strong></td>
+            <td>0.49</td>
+            <td>0.49</td>
+            <td><strong>0.534</strong></td>
+        </tr>
+        <tr>
+            <td rowspan="2">ESM</td>
+            <td>CAR</td>
+            <td><strong>0.54</strong></td>
+            <td><strong>0.54</strong></td>
+            <td>0.48</td>
+            <td>0.42</td>
+            <td><strong>0.56</strong></td>
+            <td><strong>0.52</strong></td>
+            <td><strong>0.505</strong></td>
+        </tr>
+        <tr>
+            <td>F1</td>
+            <td>0.49</td>
+            <td>0.50</td>
+            <td>0.44</td>
+            <td>0.36</td>
+            <td><strong>0.56</strong></td>
+            <td><strong>0.51</strong></td>
+            <td>0.489</td>
+        </tr>
+    </tbody>
+</table>
+
         </div>
       </div>
     </div>
