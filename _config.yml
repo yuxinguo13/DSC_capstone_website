@@ -3,4 +3,4 @@ plugins:
 - jekyll-remote-theme
 
 title: [Graph Neural Networks for Enhancing Sentiment Analysis]
-description: [We aim to use GNN to deal tith long-range interactions] \n By Yuxin Guo (y5guo@ucsd.edu), Yunfan Long (yulong@ucsd.edu), Yujia Wang (yuw103@ucsd.edu)
+description: [We aim to use GNN to deal tith long-range interactions] <br> By Yuxin Guo (y5guo@ucsd.edu), Yunfan Long (yulong@ucsd.edu), Yujia Wang (yuw103@ucsd.edu)
