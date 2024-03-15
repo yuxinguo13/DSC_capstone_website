@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Graph Neural Networks for Enhancing Sentiment Analysis</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Graph Neural Networks for Enhancing Sentiment Analysis</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/yuxin-guo-63a019204">Yuxin Guo</a>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/justin-long-05b940239">Yunfan Long</a>,</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/yujia-wang-joy">Yujia Wang</a>
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/1ugd37HqsdiDJvqK3zuVZIA7QOdoxLofT/view?usp=share_link"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Report</span>
+                </a>
+              </span>
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/yunfanlong/dsc180b.git"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/13PzwBAjyI4VYpCEVye6fU3gGsDvdnrBY/view"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+
+          <p>
+            In this study, we want to introduce a novel approach to sentiment analysis
+            by integrating Graph Neural Networks (GNNs), specifically Graph Attention
+            Networks (GAT), with traditional Natural Language Processing (NLP) tech-
+            niques.
+          </p>
+          <p>
+            By focusing on the challenges of interpreting long-range dependen-
+            cies within text, particularly in the context of social media interactions, we
+            propose a model that leverages the relational and textual information present
+            in data from college SubReddit forums before and during the COVID-19 pan-
+            demic.
+          </p>
+          <p>
+            Our methodology employs RoBERTa for text em-
+            bedding, followed by a GAT to incorporate the structural relationships be-
+            tween messages, enhancing the sentiment analysis capability beyond the lim-
+            itations of conventional models.
+          </p>
+
+          <p>
+            The results demonstrate a statistically signif-
+            icant improvement in identifying and relating sentiments across distant text
+            parts, underscoring the potential of GNNs in capturing complex interactions
+            within text data. This research contributes to the evolving field of sentiment
+            analysis by showcasing the effectiveness of combining GNNs with existing
+            NLP frameworks, offering insights into the nuanced emotional landscape of
+            digital communications during a global crisis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Introduction -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Introduction</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            In the dynamic realm of NLP, sentiment analysis stands as a cornerstone for unraveling the intricate emotional fabric of text. However, the traditional models often falter at the complex dance of sentiments in social media's vast expanse. This study introduces a novel confluence of Graph Neural Networks, particularly Graph Attention Networks, with the rich linguistic insights of NLP techniques such as RoBERTa. Centered on the vibrant dialogues within college SubReddit forums amid the COVID-19 period, our method transcends conventional sentiment analysis. It merges NLP's semantic depth with GNN's contextual acumen, aiming to illuminate the nuanced emotional landscape of digital discourse in these unprecedented times.
+          </p>
+
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/process.png" alt="data_example" width="500"/>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+    <br>
+    <!--/ Introduction -->
+
+    <!-- Dataset -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Dataset</h2>
+        <div class="content has-text-justified">
+            <p>The study analyzes social media data sourced from Reddit, focusing specifically on SubReddits associated with different colleges. This dataset covers two distinct time periods: 2019, representing the pre-pandemic landscape, and 2020, reflecting sentiments amidst the COVID-19 pandemic.</p>
+            <p>Selection criteria for the colleges included in the study were based on a variety of factors, such as geographic location, size, and their approach to in-person learning during the pandemic. This ensured a diverse representation of college communities.</p>
+            <p>The dataset consists of 165,570 messages, including original posts, comments, and their respective replies. To enhance the reliability of the dataset, a significant subset of the data underwent manual labeling across various sentiment categories. This manual labeling process ensured a balanced and accurately labeled dataset for training and testing machine learning models.</p>
+            <div class="column is-3 has-text-centered">
+            <img src="./static/images/data_example.png" alt="data_example" width="500"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!--/ Dataset -->
+    
+    <!-- Model -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Model</h2>
+        <div class="content has-text-justified">
+          <p>The study proposes a machine learning model to analyze sentiment in social media data. This model builds upon existing methodologies in sentiment analysis and natural language processing. Specifically, it leverages techniques such as sentiment lexicons, neural networks, and deep learning architectures.</p>
+          <p>By integrating these advanced techniques, the model aims to accurately classify the sentiment expressed in social media messages, including posts, comments, and replies. The model undergoes rigorous testing and validation to ensure its effectiveness in capturing the nuanced sentiment variations present in the dataset.</p>
+          
+        </div>
+      </div>
+    </div>
+    <br>
+    <!--/ Model -->
+
+    <!-- Result -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Result</h2>
+        <div class="content has-text-justified">
+          <p>The analysis of the social media data revealed insightful trends in sentiment across different college communities on Reddit. Specifically, the study observed how sentiments evolved from the pre-pandemic period to the pandemic era.</p>
+          <p>Key findings include shifts in sentiment towards online learning, campus closures, and the overall impact of the pandemic on students' emotional well-being. The results provide valuable insights into the sentiments expressed by college students during a time of significant societal change.</p>
+          
+        </div>
+      </div>
+    </div>
+    <br>
+    <!--/ Result -->
+
+    <!-- Discussion -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Discussion</h2>
+        <div class="content has-text-justified">
+          <p>The findings of the study were discussed in the context of existing research in sentiment analysis and social media studies. The discussion highlighted the implications of the results for understanding the impact of external events, such as the COVID-19 pandemic, on college communities.</p>
+          <p>Additionally, the limitations of the study were acknowledged, including the potential biases in the dataset and the generalizability of the findings to other social media platforms and demographic groups. Suggestions for future research directions were also provided to address these limitations and further advance the field of social media sentiment analysis.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!--/ Discussion -->
+
+    <!-- Future Work -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Future Work</h2>
+        <div class="content has-text-justified">
+          <p>Based on the insights gained from this study, several potential avenues for future research were identified. These include further exploration of sentiment dynamics during crises, such as the COVID-19 pandemic, and the development of more sophisticated sentiment analysis models.</p>
+          <p>Future research efforts may also focus on refining the existing model to better capture the nuances of sentiment expressed in social media data. Additionally, investigating the impact of contextual factors, such as geographic location and cultural differences, on sentiment expression could enhance the understanding of sentiment dynamics in online communities.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!--/ Future Work -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @article{park2021nerfies,
+        author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+        title     = {Nerfies: Deformable Neural Radiance Fields},
+        journal   = {ICCV},
+        year      = {2021},
+      }
+
+      @article{yan2021sentiment,
+        author    = {Yan, Tian and Liu, Fang},
+        title     = {Sentiment Analysis and Effect of COVID-19 Pandemic using College SubReddit Data},
+        journal   = {arXiv preprint arXiv:2112.04351},
+        year      = {2021}, 
+      }
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> made by Keunhong Park.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
